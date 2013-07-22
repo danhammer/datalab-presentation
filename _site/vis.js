@@ -19,7 +19,7 @@ var humid  = svg.append("svg:g");
 
 // load and display the humid tropical biome
 
-d3.json("world.json", function(error, topology) {
+d3.json("readme-world-110m.json", function(error, topology) {
 
   var countries = topojson.object(topology, topology.objects.countries)
 
