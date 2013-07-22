@@ -2,7 +2,7 @@
 <style>
 path {
   stroke: white;
-  stroke-width: 0.5px;
+  stroke-width: 1px;
   fill: grey;
 }
 
@@ -21,7 +21,7 @@ path {
 	<head>
 		<meta charset="utf-8">
 
-		<title>forma</title>
+		<title>data lab</title>
 
 		<meta name="description" content="Forest Monitoring">
 		<meta name="author" content="Dan Hammer">
@@ -36,11 +36,6 @@ path {
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
 
 	</head>
 
@@ -93,15 +88,48 @@ path {
 
               <section>
                 <h1>Global Forest Watch</h1>
-                <h3 style="color:#33CCFF">more raw data than the entire printed collection at the United States Library of Congress</h3>
-                <h1>A Big Data Project</h1>
+                <h1>Is a Big Data Project</h1>
+              </section>
+
+              <section>
+                <h2>... and other projects at WRI could be</h2>
+              </section>
+
+              <section>
+                <h3>Aspects of a data-intensive project</h3>
+                <ol>
+                  <li> Management </li>
+                  <li> Analysis </li>
+                  <li> Visualization & Dissemination </li>
+                </ol>
               </section>
 
             </section>                 
 
-            <!-- Show that the partition framework to analyze the
-            spectral time series is well-suited to Clojure -->
             <section>
+
+              <section>
+                <h2>Management</h2>
+              </section>
+
+              <section>
+                <h2>Global Forest Watch relies on</h2>
+                <h3 style="color:#33CCFF">more raw data than the entire printed collection at</h3>
+                <h2>The US Library of Congress</h2>
+              </section>
+
+              <section>
+                <div width = 50%> <h2> Before </h2> <br> <h3 style="color:#33CCFF"> Local storage on a server or set of servers</h3></div> <br>
+                <div width = 50%> <h2> Now </h2> <br> <h3 style="color:#33CCFF"> Distributed file systems on the cloud </h3></div>
+              </section>
+
+            </section>
+
+            <section>
+
+              <section>
+                <h2>Analysis</h2>
+              </section>
 
               <section>
                 <img width="1000" height="650" src="images/ndvi.png" alt="ndvi">
@@ -126,11 +154,64 @@ path {
             </section>
 
 
+
 				<section>
-              <script src="d3.v3.js"></script>
-              <script src="topojson.v0.min.js"></script>
-              <div id="chart"></div>
-              <script src="vis.js"></script>
+              <section>
+                <h2>Visualization & Dissemination</h2>
+              </section>
+
+              <section>
+                <script src="d3.v3.js"></script>
+                <script src="topojson.v0.min.js"></script>
+                <div id="chart"></div>
+                <script src="vis.js"></script>
+				  </section>
+
+
+              <section>
+
+                <h3 style="color:#33CCFF">API and client libraries</h3>
+
+	             <p align="left">
+		            <code class="Python">
+			           <pre>
+>>> from forma_api import *
+>>> data = count_query(iso = "idn", begin = "2013-03-01")
+			           </pre>
+		            </code>
+	             </p>
+
+	             <p align="left">
+		            <code class="bash">
+			           <pre>
+>>> data
+
+   count        country        date  iso
+1   1010      Indonesia  2013-04-07  IDN
+2    978      Indonesia  2013-04-23  IDN
+3    992      Indonesia  2013-05-08  IDN
+			           </pre>
+		            </code>
+	             </p>
+
+              </section>                 
+
+				</section>
+
+				<section>
+              <section>
+                <h2>Scale and style</h2>
+              </section>
+
+              <section>
+                <img width="800" height="600" src="images/work-lines.png" alt="work">
+              </section>
+
+              <section>
+                <h1> Open Source </h1>
+                <h3 style="color:#33CCFF"> For all that is good and decent in this world <h3>
+              </section>
+
 				</section>
 
 
@@ -180,7 +261,7 @@ path {
 		</script>
 
 	</body>
-   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+   <!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
 </html>
 
 
