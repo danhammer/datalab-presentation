@@ -48,7 +48,7 @@ d3.json("humid.json", function(error, topology) {
 function startAnimation() {
   d3.timer(function() {  
     var angle = velocity * (Date.now() - then);  
-    projection.rotate([angle,0,-23.5]);  
+    projection.rotate([angle,0,0]);  
     svg.selectAll("path")  
       .attr("d", path);  
   })
